@@ -1,0 +1,43 @@
+/* Materiais de Apoio:
+
+Site 1: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+Site 2: https://flexbox.help/
+Site 3: https://the-echoplex.net/flexyboxes/
+
+*/
+
+#container {
+    background: #999;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    /* row: linha | colum: em coluna | reverse: inverte a ordem dos elementos */
+    flex-direction: row;
+    /* flex-wrap: determina se uma caixa vai aceitar quebra de linha ou não */
+    flex-wrap: wrap;
+    /* justify-content: posiciona horizontalmente */
+    justify-content: center;
+    /* align-items: posiciona verticalmente */
+    align-items: flex-end;
+    /* align-items: posiciona verticalmente */
+    align-items: flex-end;
+}
+.item {
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+    /* :nth-chield(): seleciona um elemento filho na classe */
+.item:nth-child(2) { 
+    /* flex-grow: determina a sensibilidade de tamanho de uma caixa */
+    flex-grow: 2;
+    order: 1;
+}
+
+/* :nth-chield(): seleciona um elemento filho na classe */
+.item:nth-child(3) { 
+    /* flex-grow: determina a sensibilidade de tamanho de uma caixa */
+    flex-shrink: 1;
+}
